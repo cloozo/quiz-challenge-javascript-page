@@ -13,7 +13,7 @@
     <div class="wrapper">
 <!--  -->
 <header class="timer-wrap">
-      <div class="view_highscore">View high score</div> 
+      <div class="view_highscore"></div> 
        <div id ="timer"></div> 
 </header>
 
@@ -118,13 +118,28 @@
 <div id="enter-initial"  class="initial" >
   <h1> Please Enter your initial</h1>
   <br>  
-  <input type="text" onfocus="this.value=''" id="initial_letter"></input>
-  <br>  
-  <br>  
+ 
+  <label for="name">Name:</label>
+  <input  type="text" id ="name">
+  <br>
+  
+  <br>
+  <label for="name">score:</label>
+  <input  type="text" id ="score"><p>/100</p>
+  <br>
+  <br>
+  <button id="button">Save</button>
 
-  <button id="final-button"> View my score</button>
-  <h1 id="final-score"></h1>
 </div>
+
+
+<div id="highest-score"  class="initial" >
+  <h1 id="thescores">The scores from highest to lowest:</h1>
+  <P> The scores are :</P><h1 id="highest-scores"> </h1>
+
+  
+</div>
+
 
 </div>
     <script src="script.js"></script>

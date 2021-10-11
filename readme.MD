@@ -1,33 +1,42 @@
-JS-Code-Quiz
+Javascript-Code-Quiz-Challenge 2021
 
-During the course of this assingment, lots of research time, googling, and self sudy has been done.
+## Javascript-Code-Quiz Challenge
+---
+# During the course of this assignment, lots of research time, googling, and self-study has been done.
 
-This  app  helped me  learn how to manipulate DOM elements  to get local storage that enables to store users information in local computer, which can be later retrieved.
+* The creation of this app helped me learn how I can select different Html elements to manipulate DOM, using different methods like the "getElementsbyId" and "querySelector" and "querySelectorAll" to apply different behavior through the elements and buttons. I use the "addEventistener"  method to help achieve that.
 
-Use of the site can be summed up with the following user story:
+ I also use local storage to facilitate storing of users information like their initial and score in local computer, which later can be conveniently retrieved.
+ 
+  There is also a Countdown timer to control the time which will deduct points from the user score if they miss a question.
+---
 
-
--A the landing page click the "View Highscores" button to check out your score compared to your peers.
-
--The timer starts When you click the "Start Quiz". 
-User need to click on the answer that is the overall timers for about 90 second.
-They need to quickly and correctly results in a higher score.
- Answering incorrectly results in a time penalty and  cause the user to get lower score and when users enters his/her initial, the timer stops and they are presented with their final sore based on the questions they got right or wrong.
-
- It was a great learing experience.
+## Use of the site can be summed up with the following user story:
 
 
-Technologies Used
+* At the landing page, there is a click the "View Highscore" button to check out your score compared to your peers.
 
-Vanilla JavaScript
-HTML
-CSS
-Jquery
+* The timer starts when you click the "Start Quiz". 
 
+The user needs to click on the right answer. If they choose the wrong answer, points will be deducted from their score while the timer is still running.
 
+ Answering incorrectly will result in a time reduction penalty and  cause the user to get a lower score. At the end of the quiz,  the user enters his/her initial. The timer stops and they are presented with their final score based on the questions they got right or wrong.
 
-Assignment: multiple quiz options
+---
+ Overall, it was a great learning experience.
 
+link to the page can be found here: 
+[title](https://cloozo.github.io/quiz-challenge-javascript-page/)
 
+# Technologies Used
+
+- Vanilla JavaScript
+- HTML
+- CSS
+- Jquery
+
+---
+
+# Assignment: multiple quiz options
 
 By Jonacin Pierre-Louis
