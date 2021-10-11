@@ -34,8 +34,8 @@ function answerQuestion1() {
 
 // question 2 hides , question 3 shows 
 function answerQuestion2() {
-    alert($(this).attr("data-number"))
     if ($(this).attr("data-number") =="correct!"){
+        alert($(this).attr("data-number"))
         yourScore += 20;
         console.log(yourScore);
     }
@@ -57,6 +57,7 @@ $("#question2 .choice-text").click(answerQuestion2);
 // question 3 hides , question 4 shows 
 function answerQuestion3() {
     if ($(this).attr("data-number") =="correct!"){
+        alert($(this).attr("data-number"))
         yourScore += 20;
         console.log(yourScore);
     }
@@ -76,6 +77,7 @@ $("#question3 .choice-text").click(answerQuestion3);
 // question 4 hides , question 5 shows 
 function answerQuestion4() {
     if ($(this).attr("data-number") =="correct!"){
+        alert($(this).attr("data-number"))
         yourScore += 20;
         console.log(yourScore);
     }
@@ -95,6 +97,7 @@ $("#question4 .choice-text").click(answerQuestion4);
 // question 5 hides , enter initial 
 function answerQuestion5() {
     if ($(this).attr("data-number") =="correct!"){
+        alert($(this).attr("data-number"))
         yourScore += 20;
         console.log(yourScore);
     }
@@ -119,7 +122,7 @@ var timer;
 var timeLeft=0;
 // function  startTimer starts
 function  startTimer() {
-    timeLeft = 90;
+    timeLeft = 60;
     timer=setInterval(function(){
     timeLeft--;
     if(timeLeft ===0){
@@ -132,11 +135,11 @@ function  startTimer() {
 // function finish
 function finish(){
     clearInterval(timer);
-    alert("The Quiz is Over!");
+    alert(`The Quiz is Over! You score ${yourScore} out of 100`);
 }
 //substract time
 function  substractTime() {
-   timeLeft-=10;
+   timeLeft-=5;
 }
 
 
@@ -151,15 +154,40 @@ function EndOfQuiz() {
 } */
 
 
-var finalScore= document.getElementById("final-score");
+// setting up the global variabls
+var buttonEl = document.getElementById("button");
+var nameInputEl = document.getElementById("name");
+var scoreInputEl = document.getElementById("score");
 
+var scores = [];
 
+buttonEl.addEventListener("click", saveScore);
 
-var finalButton= document.getElementById("final-button").addEventListener("click", function()
-{
-var myInitial= document.getElementById("initial_letter").value;
-localStorage.setItem(myInitial,yourScore);
+//
+function saveScore(){
+    $("#enter-initial").hide();
+    $("#highest-score").show();
 
-finalScore.innerHTML= `${myInitial}, You score: ${yourScore} out of 100`;
-event.preventDefault();
-})
+   
+// creating an array
+var newScore = {
+name: nameInputEl.value,
+score: scoreInputEl.value
+};
+
+scores.push(newScore);
+
+localStorage.setItem("highscores", JSON.stringify(scores));
+
+// empty both value
+scoreInputEl.value = "";
+nameInputEl.value = "";
+
+console.log("success!");// 
+//
+console.log(newScore);// 
+
+}
+
+//
+
