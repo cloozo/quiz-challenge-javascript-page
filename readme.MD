@@ -16,7 +16,7 @@ Javascript-Code-Quiz-Challenge 2021
 
 * At the landing page, there is a click the "View Highscore" button to check out your score compared to your peers.
 
-* The timer starts When you click the "Start Quiz". 
+* The timer starts when you click the "Start Quiz". 
 
 The user needs to click on the right answer. If they choose the wrong answer, points will be deducted from their score while the timer is still running.
 
@@ -30,10 +30,10 @@ link to the page can be found here:
 
 # Technologies Used
 
-Vanilla JavaScript
-HTML
-CSS
-Jquery
+- Vanilla JavaScript
+- HTML
+- CSS
+- Jquery
 
 ---
 
