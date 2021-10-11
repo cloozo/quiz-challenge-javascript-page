@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz Question Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+   
+    <div class="wrapper">
+<!--  -->
+<header class="timer-wrap">
+      <div class="view_highscore">View high score</div> 
+       <div id ="timer"></div> 
+</header>
+
+<!-- quiz starts -->
+        <br>
+         <h1 id="answer-check">Coding Quiz Challenge: </h1> 
+<div id="start" class="startNow">
+<h2>Try to answer the following code-related questions within the time limit.
+<br> Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
+<button> Start Quiz</button>
+</div>
+ <br>
+ <hr>
+<!-- question 1 -->
+   <div id="question1" class="question">
+    <br>
+    <h1> 1. Question 1:  Hello, What Does HTML Stand for?  ________ .  </h1>
+    <br> 
+    <ul>
+      <li class="choice-text" data-number="not correct!"  id="first_option">1) HyperTension Markup Language</li>
+      <br>
+      <li  class="choice-text" data-number="not correct!"   id="second_option"> 2) HyperText Makeup Language</li>
+      <br>
+      <li class="choice-text"  data-number="correct!" id="third_option"> 3) HyperText Markup Language</li>
+      <br>
+      <li class="choice-text"  data-number="not correct!" id="fourth_option"> 4) HyperTime Markeup Language</li>
+      <br>
+      </ul>
+     <br> 
+  </div>
+<!-- question 2 -->
+     
+      <div id="question2" class="question">
+        <h1>  2.  Question 2:  What Syntax Would Call a function? __________ . </h1>
+      <br>
+      <ul>
+        <li class="choice-text"   id="first_option"  data-number= "not correct!"  >1) var function</li>
+        <br>
+        <li  class="choice-text"   id="second_option"  data-number= "not correct!" > 2) function</li>
+        <br>
+        <li class="choice-text"    id="third_option" data-number= "not correct!"  > 3) call function </li>
+        <br>
+        <li class="choice-text"    id="fourth_option" data-number= "correct!"  > 4) function()</li>
+        <br>
+        </ul>
+       <br> 
+    </div>
+
+<!-- question 3 -->
+
+    <div id="question3" class="question">
+      <h1> 3.  Question 3:The condition in an if / else statement is enclosed within __________ . </h1>
+      <br>
+      <ul >
+        <li class="choice-text"   id="first_option"  data-number= "not correct!" >1) quotes</li>
+        <br>
+        <li  class="choice-text"    id="second_option" data-number= "correct!" > 2) curly brackets</li>
+        <br>
+        <li class="choice-text"    id="third_option" data-number= "not correct!" > 3) parentheses</li>
+        <br>
+        <li class="choice-text"   id="fourth_option"  data-number= "wrong aswer!"  > 4) square brackets</li>
+        <br>
+        </ul>
+      <br>    
+    </div>
+
+<!--question 4  -->
+
+    <div id="question4" class="question">
+      <h1> 4.   Question 4: Commonly used data types DO NOT include:__________ .</h1>
+      <br>
+      <ul >
+        <li class="choice-text"   id="first_option"  data-number= "not correct!"  >1) strings</li>
+        <br>
+        <li  class="choice-text"   id="second_option" data-number= "not correct!"   > 2) booleans</li>
+        <br>
+        <li class="choice-text"   id="third_option" data-number= "correct!"  > 3) alerts</li>
+        <br>
+        <li class="choice-text"    id="fourth_option" data-number= "not correct!"  > 4) numbers</li>
+        <br>
+        </ul>
+      <br>   
+    </div> 
+<!-- question 5 -->
+<div id="question5" class="question">
+  <h1> 5.   Question 5:  An unchangeable variable  must be declared by using:__________ .</h1>
+  <br>
+  <ul >
+    <li class="choice-text"   id="first_option" data-number= "not correct!"  >1) var</li>
+    <br>
+    <li  class="choice-text"  id="second_option"  data-number= "correct!"   > 2) const</li>
+    <br>
+    <li class="choice-text"     id="third_option" data-number= "not correct!"   > 3) let</li>
+    <br>
+    <li class="choice-text"   id="fourth_option" data-number= "not correct!"   > 4) all above options can be used</li>
+    <br>
+    </ul>
+  <br>   
+</div> 
+<!-- Enter you initial -->
+
+<div id="enter-initial"  class="initial" >
+  <h1> Please Enter your initial</h1>
+  <br>  
+  <input type="text" onfocus="this.value=''" id="initial_letter"></input>
+  <br>  
+  <br>  
+
+  <button id="final-button"> View my score</button>
+  <h1 id="final-score"></h1>
+</div>
+
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
+

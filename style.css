@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+    background-color: #081200;
+  }
+  
+  .wrapper {
+    margin:0 auto;
+    text-align: center;
+       background-color: #ffffff;
+      border:1px solid rgb(83, 19, 19);
+      width:90%;
+      height:100vh;
+      min-width:550px;
+      
+    }
+h1{
+font-family: 'Scheherazade New', serif;
+  font-size: 25px;
+  text-align: center;
+ padding-top:20px;
+}
+
+h2{
+  font-size: 20px;
+  text-align: center;
+  padding:20px;
+}
+
+
+
+#timer{
+margin: 0 auto;
+font-size: 30px;
+width:100px;
+text-align: center;
+color: red;
+background:transparent;
+padding-left:40px;
+
+}
+
+
+.timer-wrap{
+ width:600px;
+ text-align:right;
+
+  }
+  
+
+
+
+.question {
+  background: transparent;
+  font-size: 20px;
+  width:100%;
+ list-style-type: none;
+ display:none;
+ text-align: center;
+
+}
+
+
+.initial{
+  background: transparent;
+  font-size: 20px;
+  width:100%;
+ list-style-type: none;
+ display:none;
+ text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.choice-text{
+  font-weight: lighter;
+  width:470px;
+  margin: 0 auto;
+font-family: 12px;
+list-style: none;
+text-align: left;
+border-radius: 8px 8px;
+background: teal;
+color:white;
+height:50px;
+padding-left:50px;
+padding-top:10px;
+box-shadow: 2px 2px #888888;
+
+}
+
+.choice-text:hover{
+
+background: rgb(238, 224, 37);
+
+}
+
+  
+.timer-wrap{
+  display:flex;
+}
+
+button{
+  font-size: 40px;
+  text-align: center;
+  width:290px;
+  height:50px;
+  border-radius: 8px 8px;
+  background: teal;
+  color:white;
+  box-shadow: 2px 2px #888888;
+
+}
+
+#wrongAnswer{
+  font-size: 20px;
+  text-align: center;
+  width:190px;
+  text-align: center;
+  height:50px;
+  border-radius: 8px 8px;
+}
+
+.view_highscore{
+  font-size: 20px;
+  text-align: left;
+  width:590px;
+  height:50px;
+  color:rgb(0, 0, 0);
+  background: #ffffff;
+  margin-left: 83px;
+  padding-top:20px;
+}
+
+#enter-initial input{
+  font-size:30px;
+  width: 80px;
+  height:40px;
+}
+
+#enter-initial button{
+  font-size:30px;
+  width: 200px;
+  height:40px;
+}
