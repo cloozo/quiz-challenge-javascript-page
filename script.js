@@ -188,9 +188,9 @@ function compareScore (a, b){
 }
 console.log(scores.sort(compareScore))
 //
-var scoreHeading = document.getElementById("score-heading").innerHTML= "<h1> SCORE FROM HIGHEST TO LOWEST </h1>";
+var scoreHeading = document.getElementById("score-heading").innerHTML= "<h1> From the higest score to the lowest </h1>";
 var headingScore = document.getElementById("heading-score").innerHTML= 
-`<br>From highes to lowest - Initial and score:${JSON.stringify(scores.sort(compareScore))}<br></br>`;
+`<br>Result : Initials - Scores:${JSON.stringify(scores.sort(compareScore))}<br></br>`;
 var horizontalRule= document.getElementById("horizontal-rule").innerHTML= `<hr>`;
 //
 console.log(` NOW 2) :${headingScore}`);
