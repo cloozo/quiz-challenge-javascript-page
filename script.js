@@ -135,7 +135,7 @@ function  startTimer() {
 // function finish
 function finish(){
     clearInterval(timer);
-    alert(`The Quiz is Over! You score ${yourScore} out of 100`);
+    alert(`The Quiz is Over! You scored ${yourScore} out of 100`);
 }
 //substract time
 function  substractTime() {
@@ -156,36 +156,46 @@ function EndOfQuiz() {
 
 // setting up the global variabls
 var buttonEl = document.getElementById("button");
-var nameInputEl = document.getElementById("name");
+var initialsInputEl = document.getElementById("initials")
 var scoreInputEl = document.getElementById("score");
 
-var scores = [];
-
-buttonEl.addEventListener("click", saveScore);
 
 //
+buttonEl.addEventListener("click", saveScore);
 function saveScore(){
     $("#enter-initial").hide();
-    $("#highest-score").show();
-
-   
+    $("#view-score").show();
+// thescores
 // creating an array
-var newScore = {
-name: nameInputEl.value,
-score: scoreInputEl.value
+var scores = []; // array
+var user = {// object
+    initials: initialsInputEl.value,
+    score: scoreInputEl.value
 };
 
-scores.push(newScore);
+var scoresString =localStorage.getItem("scores");
 
-localStorage.setItem("highscores", JSON.stringify(scores));
+if (scoresString)  {scores = JSON.parse(scoresString) }
+scores.push(user);
+localStorage.setItem("scores",JSON.stringify(scores))
 
-// empty both value
-scoreInputEl.value = "";
-nameInputEl.value = "";
-
-console.log("success!");// 
+for (i = 0; i < scores.length; i ++){
+    console.log(scores[i]);
+}
 //
-console.log(newScore);// 
+function compareScore (a, b){
+        return b.score - a.score
+}
+console.log(scores.sort(compareScore))
+//
+var scoreHeading = document.getElementById("score-heading").innerHTML= "<h1> SCORE FROM HIGHEST TO LOWEST </h1>";
+var headingScore = document.getElementById("heading-score").innerHTML= 
+`<br>From highes to lowest - Initial and score:${JSON.stringify(scores.sort(compareScore))}<br></br>`;
+var horizontalRule= document.getElementById("horizontal-rule").innerHTML= `<hr>`;
+//
+console.log(` NOW 2) :${headingScore}`);
+console.log(` Individual person:${score}`);
+console.log(` All gamers total:${user}`);
 
 }
 
