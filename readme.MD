@@ -8,7 +8,7 @@ Javascript-Code-Quiz-Challenge 2021
 
  I also use local storage to facilitate storing of users information like their initial and score in local computer, which later can be conveniently retrieved.
  
-  There is also a Countdown timer to control the time which will deduct points from the user score if they miss a question.
+  There is also a Countdown timer(60 seconds) to control the time which will deduct points from the user score if they miss a question.
 ---
 
 ## Use of the site can be summed up with the following user story:
@@ -20,7 +20,7 @@ Javascript-Code-Quiz-Challenge 2021
 
 The user needs to click on the right answer. If they choose the wrong answer, points will be deducted from their score while the timer is still running.
 
- Answering incorrectly will result in a time reduction penalty and  cause the user to get a lower score. At the end of the quiz,  the user enters his/her initial. The timer stops and they are presented with their final score based on the questions they got right or wrong.
+ Answering incorrectly will result in a time reduction penalty of 5 seconds and  cause the user to get a lower score with the time limit of 60 seconds. At the end of the quiz,  the user enters his/her initial. The timer stops and they are presented with their own score based on the questions they got right or wrong, then  final scorea of all users  with the higherst score on top.
 
 ---
  Overall, it was a great learning experience.
