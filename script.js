@@ -134,13 +134,13 @@ function  startTimer() {
 function finish(){
     clearInterval(timer);
     alert(`The Quiz is Over! You scored ${yourScore} out of 100`);
+    var finalsScore= document.getElementById("result").innerHTML= `<h1> ${yourScore}/100 </h1>`;
+ 
 }
 //substract time
 function  substractTime() {
    timeLeft-=5;
 }
-
-
 
 /* // End of Quiz
 var initial = document.getElementById("initial_letter").value;
@@ -155,7 +155,8 @@ function EndOfQuiz() {
 // setting up the global variabls
 var buttonEl = document.getElementById("button");
 var initialsInputEl = document.getElementById("initials")
-var scoreInputEl = document.getElementById("score");
+// var scoreInputEl = document.getElementById("score");
+var scoreInputEl = yourScore;
 
 
 //
@@ -168,7 +169,7 @@ function saveScore(){
 var scores = []; // array
 var user = {// object
     initials: initialsInputEl.value,
-    score: scoreInputEl.value
+    score: yourScore
 };
 var scoresString =localStorage.getItem("scores");
 
@@ -187,11 +188,11 @@ console.log(scores.sort(compareScore))
 //
 var scoreHeading = document.getElementById("score-heading").innerHTML= "<h1> From the higest score to the lowest </h1>";
 var headingScore = document.getElementById("heading-score").innerHTML= 
-`${JSON.stringify(scores.sort(compareScore))}<bb>`;
+`${JSON.stringify(scores.sort(compareScore))}`;
 var horizontalRule= document.getElementById("horizontal-rule").innerHTML= `<hr>`;
 //
 console.log(` NOW 2) :${headingScore}`);
-console.log(` Individual person:${score}`);
+// console.log(` Individual person:${score}`);
 console.log(` All gamers total:${user}`);
 
 }
