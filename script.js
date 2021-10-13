@@ -50,7 +50,6 @@ function answerQuestion2() {
        /* yourScore += 20; */
  
     }
-
 }
 $("#question2 .choice-text").click(answerQuestion2);
 
@@ -61,7 +60,6 @@ function answerQuestion3() {
         yourScore += 20;
         console.log(yourScore);
     }
-    
     $("#question3").hide();
     $("#question4").show();
 
@@ -172,7 +170,6 @@ var user = {// object
     initials: initialsInputEl.value,
     score: scoreInputEl.value
 };
-
 var scoresString =localStorage.getItem("scores");
 
 if (scoresString)  {scores = JSON.parse(scoresString) }
