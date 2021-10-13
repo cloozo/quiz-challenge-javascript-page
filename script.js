@@ -157,7 +157,6 @@ var initialsInputEl = document.getElementById("initials")
 // var scoreInputEl = document.getElementById("score");
 var scoreInputEl = yourScore;
 
-
 //
 buttonEl.addEventListener("click", saveScore);
 function saveScore(){
@@ -171,7 +170,6 @@ var user = {// object
     score: yourScore
 };
 var scoresString =localStorage.getItem("scores");
-
 if (scoresString)  {scores = JSON.parse(scoresString) }
 scores.push(user);
 localStorage.setItem("scores",JSON.stringify(scores))
@@ -193,7 +191,6 @@ var horizontalRule= document.getElementById("horizontal-rule").innerHTML= `<hr>`
 console.log(` NOW 2) :${headingScore}`);
 // console.log(` Individual person:${score}`);
 console.log(` All gamers total:${user}`);
-
 }
 
 //
